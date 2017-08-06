@@ -1,2 +1,1 @@
-# django19
-# django19
+# Django Customer Inventory
