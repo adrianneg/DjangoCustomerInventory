@@ -1,0 +1,14 @@
+{% extends '../base.html' %}
+
+{% block content %}
+
+<h2>Items list</h2>
+
+    {%for item in items %}
+        <p><a href="{% url 'inventory:item_detail' item.id %}">{{item.title|capfirst}}</a></p>
+        <p>{{item.description}}</p>
+        <p>{{item.amount}}</p>
+
+    {% endfor %}
+
+{% endblock %}
